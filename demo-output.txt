@@ -1,0 +1,9 @@
+T1 PASS | Reminder + EmailChannel | result=Email Envelope [Subject: Reminder | Body: Submit the assignment by Sunday.]
+T2 PASS | Reminder + SMSChannel | result=SMS [ Reminder: Submit the assignment by Sunday. ]
+T3 PASS | UrgentAlert + EmailChannel | result=Email Envelope [Subject: Urgent Alert | Body: URGENT: The server is unavailable.]
+T4 PASS | UrgentAlert + SMSChannel | result=SMS [ Urgent Alert: URGENT: The server is unavailable. ]
+T5 PASS | Reminder + EmailChannel -> SMSChannel | sameObject=true | stateUnchanged=true | id=reminder-switch | message=Submit the assignment by Sunday.
+  before=Email Envelope [Subject: Reminder | Body: Submit the assignment by Sunday.] | after=SMS [ Reminder: Submit the assignment by Sunday. ]
+T6 PASS | Reminder + PushChannel | result=Push Notification Envelope [ App Title: Reminder | Payload: Submit the assignment by Sunday. ]
+T7 PASS | UrgentAlert + PushChannel | result=Push Notification Envelope [ App Title: Urgent Alert | Payload: URGENT: The server is unavailable. ]
+SUMMARY: 7/7 PASS
