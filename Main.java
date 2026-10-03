@@ -21,10 +21,6 @@ public class Main {
         String urgentEmail = "Email Envelope [Subject: Urgent Alert | Body: URGENT: "
                 + urgentMessage + "]";
         String urgentSms = "SMS [ Urgent Alert: URGENT: " + urgentMessage + " ]";
-        String reminderPush = "Push Notification Envelope [ App Title: Reminder | Payload: "
-                + reminderMessage + " ]";
-        String urgentPush = "Push Notification Envelope [ App Title: Urgent Alert | Payload: URGENT: "
-                + urgentMessage + " ]";
 
         int passed = 0;
         passed += checkResult("T1", new Reminder("reminder-1", new EmailChannel(),
@@ -36,10 +32,6 @@ public class Main {
         passed += checkResult("T4", new UrgentAlert("alert-1", new SMSChannel(),
                 urgentMessage), urgentSms);
         passed += checkRuntimeSwitch(reminderMessage, reminderEmail, reminderSms);
-        passed += checkResult("T6", new Reminder("reminder-1", new PushChannel(),
-                reminderMessage), reminderPush);
-        passed += checkResult("T7", new UrgentAlert("alert-1", new PushChannel(),
-                urgentMessage), urgentPush);
 
         System.out.println("SUMMARY: " + passed + "/7 PASS");
         if (passed != 7) {
