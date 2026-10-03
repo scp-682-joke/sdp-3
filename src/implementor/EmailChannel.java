@@ -1,4 +1,4 @@
-package implementor;
+package src.implementor;
 
 public class EmailChannel implements Channel {
     @Override

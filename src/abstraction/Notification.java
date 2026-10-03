@@ -1,5 +1,5 @@
-package abstraction;
-import implementor.Channel;
+package src.abstraction;
+import src.implementor.Channel;
 public abstract class Notification {
     private final String id;
     private Channel channel;

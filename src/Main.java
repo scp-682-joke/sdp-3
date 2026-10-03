@@ -1,10 +1,12 @@
-import abstraction.*;
-import implementor.*;
+package src;
+
+import src.abstraction.*;
+import src.implementor.*;
 
 public class Main {
     public static void main(String[] args) {
         if (args.length != 1 || !"--demo".equals(args[0])) {
-            System.out.println("Usage: java -cp out Main --demo");
+            System.out.println("Usage: java -cp out src.Main --demo");
             return;
         }
 

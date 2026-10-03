@@ -1,8 +1,8 @@
-src/Main.java
-src/abstraction/Notification.java
-src/abstraction/Reminder.java
-src/abstraction/UrgentAlert.java
-src/implementor/Channel.java
-src/implementor/EmailChannel.java
-src/implementor/SMSChannel.java
-src/implementor/PushChannel.java
+src/src.Main.java
+src/src.abstraction/Notification.java
+src/src.abstraction/Reminder.java
+src/src.abstraction/UrgentAlert.java
+src/src.implementor/Channel.java
+src/src.implementor/EmailChannel.java
+src/src.implementor/SMSChannel.java
+src/src.implementor/PushChannel.java

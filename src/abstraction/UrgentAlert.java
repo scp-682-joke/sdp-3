@@ -1,6 +1,6 @@
-package abstraction;
+package src.abstraction;
 
-import implementor.Channel;
+import src.implementor.Channel;
 
 public class UrgentAlert extends Notification {
     private final String message;

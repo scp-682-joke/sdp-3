@@ -1,4 +1,4 @@
-package implementor;
+package src.implementor;
 
 public class SMSChannel implements Channel {
     @Override
